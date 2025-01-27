@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  color: lightsteelblue;
+  background-color: #001f3f;
+  text-align: center;
+  font-size: 46px;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+#top1 {
+  text-align: center;
+  color: lightsteelblue;
+  background-color: #001f3f;
+  font-size: 21px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  height: 7vh;
+  width: 100vw;
+  font-family: 'Ubuntu Mono', monospace;
+  border: 2px solid black;
+}
+
+#navcontent {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+ul li {
+  list-style: none;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+ul li a {
+  padding: 1px;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+ul li a:hover {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+#container1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 63vh;
+}
+
+#container1::before {
+  content: '';
+  background: url("https://www.escoffier.edu/wp-content/uploads/2016/04/149478633.jpg") 
+    no-repeat center center/cover;
+  width: 100vw;
+  height: 59vh;
+  position: absolute;
+  z-index: -1;
+  border: 2px solid black;
+}
+
+#row1 {
+  color: #2f8652;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.btn {
+  margin-top: 15px;
+  border: 3px solid white;
+  border-radius: 15px;
+  background-color: rosybrown;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: burlywood;
+}
+
+#container3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#row2 {
+  width: 24vw;
+  height: 21vh;
+  box-shadow: 2px 7px 16px 19px;
+  margin: 51px 38px 51px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 40px;
+}
+
+#row2::before {
+  content: '';
+  background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') 
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24vw;
+  height: 21vh;
+  z-index: -1;
+  border-radius: 40px;
+}
+
+#row3 {
+  width: 24vw;
+  height: 21vh;
+  box-shadow: 2px 7px 16px 19px;
+  margin: 51px 0 51px 38px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 40px;
+}
+
+#row3::before {
+  content: '';
+  background: url('https://api.pizzahut.io/v1/content/en-in/in-1/images/deal/wow-99.jpg') 
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24vw;
+  height: 21vh;
+  z-index: -1;
+  border-radius: 40px;
+}
+
+#top3 {
+  text-align: center;
+  color: black;
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: burlywood;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 41px;
+}
+
+#row4, #row5, #row6 {
+  width: 29vw;
+  height: 360px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+
+#row4 {
+  background: url('https://www.ndtv.com/cooks/images/grilled-chicken-breast.jpg') 
+    no-repeat center center/cover;
+}
+
+#row5 {
+  background: url('https://www.bhg.com/thmb/k9Pm35_3hQo0YmlkhBtO2WoVHyE=/4000x0/filters:no_upscale()/BHG-Sheet-Pan-Lasagna.jpg') 
+    no-repeat center center/cover;
+}
+
+#row6 {
+  background: url('https://foodiemail.com/wp-content/uploads/2020/08/beef-quesadillas.jpg') 
+    no-repeat center center/cover;
+}
+
+footer {
+  background-color: gainsboro;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+#ContactUs {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+}
+
+.form-shape input, .form-shape select, .form-shape textarea {
+  width: 92%;
+  padding: 0.5rem;
+}
+
+::placeholder {
+  color: gray;
+}
+
+@media only screen and (max-width: 1131px) {
+  #row4 {
+    width: 42vw;
+  }
+  #row5 {
+    width: 45vw;
+  }
+  #row6 {
+    margin-top: 20px;
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 781px) {
+  #row4, #row5, #row6 {
+    width: 84vw;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #row4, #row5, #row6 {
+    width: 78vw;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  #navbar {
+    height: 10vh;
+  }
+  #container1::before {
+    height: 39vh;
+  }
+  #container1 {
+    height: 44vh;
+  }
+}
